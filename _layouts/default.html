@@ -24,7 +24,7 @@
   <script src="{{ '/js/transition.js' | prepend: site.baseurl }}">                 </script>
   <script src="{{ '/js/zoom.min.js' | prepend: site.baseurl }}">                   </script>
   <script src="{{ '/js/app.js' | prepend: site.baseurl }}">                        </script>
-    <script>
+    <script defer>
     var base_url = {{ site.baseurl | jsonify }},
         pagination_next_url = base_url + '{{ paginator.next_page_path }}',
         pagination_next_page_number = '{{ paginator.next_page }}',
